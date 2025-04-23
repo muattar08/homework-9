@@ -17,13 +17,13 @@ const obj2 = {
 const merged = { ...obj1, ...obj2 };
 
 // 3. 
-const ключи = Object.keys(merged);
+const keys = Object.keys(merged);
 
 // 4. 
-const значения = Object.values(merged);
+const znachenie = Object.values(merged);
 
 // 5. 
-const объединено = [...ключи, ...значения];
+const obyedineno = [...keys, ...znachenie];
 
 // 6. 
 let types = {
@@ -34,7 +34,7 @@ let types = {
 };
 
 
-объединено.forEach(item => {
+obyedineno.forEach(item => {
     const type = typeof item;
     
     if (types.hasOwnProperty(type)) {
@@ -43,7 +43,7 @@ let types = {
 });
 
 console.log("Объединённый объект:", merged);
-console.log("Ключи:", ключи);
-console.log("Значения:", значения);  
-console.log("Всё вместе:", объединено);
+console.log("Ключи:", keys);
+console.log("Значения:", znachenie);  
+console.log("Всё вместе:", obyedineno);
 console.log("По типам:", types);
